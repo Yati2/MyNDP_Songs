@@ -62,6 +62,13 @@ public class Edit extends AppCompatActivity {
             }
         });
 
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
 
 }
