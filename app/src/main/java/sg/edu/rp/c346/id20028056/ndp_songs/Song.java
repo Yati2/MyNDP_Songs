@@ -66,19 +66,19 @@ public class Song implements Serializable{
         switch (stars)
         {
             case R.id.rb1:
-                display="*";
+                display=" *";
                 break;
             case  R.id.rb2:
-                display="**";
+                display=" * * ";
                 break;
             case  R.id.rb3:
-                display="***";
+                display=" * * * ";
                 break;
             case  R.id.rb4:
-                display="****";
+                display=" * * * * ";
                 break;
             case  R.id.rb5:
-                display="*****";
+                display=" * * * * * ";
                 break;
 
         }

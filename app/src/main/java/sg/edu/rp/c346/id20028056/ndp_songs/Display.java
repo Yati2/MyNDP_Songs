@@ -20,7 +20,7 @@ public class Display extends AppCompatActivity {
     ArrayList<Song> alSongs;
     Spinner spinner;
     ListView lv;
-    ArrayAdapter<Song> aaSongs;
+    CutsomAdapter aaSongs;
     ArrayAdapter<String> aaYear;
     ArrayList<String> alYear;
     DBHelper db=new DBHelper(Display.this);
@@ -105,8 +105,8 @@ public class Display extends AppCompatActivity {
     private void load()
     {
         alSongs = db.getAllSongs();
-        aaSongs = new ArrayAdapter<Song>(this,
-                android.R.layout.simple_list_item_1, alSongs);
+        aaSongs = new CutsomAdapter(this,
+                R.layout.row, alSongs);
         lv.setAdapter(aaSongs);
         loadSpinner();
     }
